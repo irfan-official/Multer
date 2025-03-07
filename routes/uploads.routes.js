@@ -17,6 +17,7 @@ route.post("/avatar", upload.single("image"), async (req, res) => {
       let image = sharp(file_buffer).resize({ width: 1920, fit: "inside" });
 
       if (mimetype === "image/png") {
+        req.file.mimetype = "image/jpeg";
         image = image.jpeg({ quality: 80 }); // Convert PNG to JPEG for compression
       } else {
         image = image.toFormat(mimetype.split("/")[1], { quality: 80 });
