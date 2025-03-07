@@ -7,6 +7,9 @@ const userSchema = mongoose.Schema(
     image: Buffer,
     mimetype: String,
     extention: String,
+    compressionApplied: Boolean,
+    beforeCompressionfileSize: String,
+    afterCompressionfileSize: String,
   },
   { timestamp: true }
 );
