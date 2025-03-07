@@ -74,4 +74,4 @@ cloudflared update
 
 # 9. check generated avatar
 
-![Avatar](https://mao.irfans.dev/avatar/image-1741321691691-839988577.png)
+![Avatar](https://mao.irfans.dev/avatar/image-1741344211974-143278984.png)
