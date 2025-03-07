@@ -20,7 +20,7 @@ app.use("/uploads", uploadsRoutes);
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`App started at http://localhost:${PORT}`);
-  // DB_CONNECTION(); // Ensure database connects when the server starts
+  DB_CONNECTION(); // Ensure database connects when the server starts
 });
 
 export default app;

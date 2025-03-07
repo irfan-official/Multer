@@ -2,8 +2,11 @@ import mongoose from "mongoose";
 
 const userSchema = mongoose.Schema(
   {
+    fid: String,
     name: String,
-    image: String,
+    image: Buffer,
+    mimetype: String,
+    extention: String,
   },
   { timestamp: true }
 );
